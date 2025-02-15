@@ -8,9 +8,10 @@
 </head>
 <body>
     <header>
-        <h1>Civilization IV Cheatsheet</h1>
+        <h1>Civilization VII Cheatsheet</h1>
     </header>
     <main>
+        <!-- LIST -->
         <input type="text" id="filterInput" class="filter-input" placeholder="Type to search...">
         <ul id="list">
             <li class="list-item">Item 1</li>
@@ -19,7 +20,38 @@
             <li class="list-item">Item 4</li>
             <li class="list-item">Item 5</li>
             <li class="list-item">New Edited Item</li>
+            <li class="list-item"><img src="images/science_icon.png" alt="incense Image" width="25">5 new Edited Item</li>
+            <!-- <td><div class="flex-container"><img src="images/warrior.png" alt="Warrior Image" width="50"> Warrior</div> -->
         </ul>
+        
+        <!-- TABLE -->
+        <input type="text" id="filterInputTable" class="filter-input" placeholder="Type to search...">
+        <table id="cheatsheetTable">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Item</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-row">
+                    <td>Units</td>
+                    <td>Warrior</td>
+                    <td>Basic melee unit.</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Buildings</td>
+                    <td>Granary</td>
+                    <td>Provides food storage.</td>
+                </tr>
+                <tr class="table-row">
+                    <td> Technologies</td>
+                    <td><div class="icon-text"><img src="images/science_icon.png" alt="science Image" width="25"> x 0.5 </div></td>
+                    <td> Ressource</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
     <script src="script.js"></script>
 </body>
