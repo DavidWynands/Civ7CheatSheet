@@ -25,3 +25,24 @@ document.getElementById('filterInputTable').addEventListener('input', function()
         }
     });
 });
+
+// Function to add tooltips to specific words
+function addTooltips() {
+    const tooltipWords = {
+        "food": "Stuff to eat.",
+    };
+    
+    const tooltipTargets = document.querySelectorAll('.tooltip-target');
+
+    tooltipTargets.forEach(target => {
+        let html = target.innerHTML;
+        for (const [word, tooltipText] of Object.entries(tooltipWords)) {
+            const regex = new RegExp(`\\b(${word})\\b`, 'g');
+            html = html.replace(regex, `<span class="tooltip">$1<span class="tooltiptext">${tooltipText}</span></span>`);
+        }
+        target.innerHTML = html;
+    });
+}
+
+// Call the function to add tooltips on page load
+document.addEventListener('DOMContentLoaded', addTooltips);
