@@ -104,3 +104,13 @@ tr:hover {
     visibility: visible;
     opacity: 1;
 }
+
+.checkbox-group {
+    margin: 5px;
+    font-size: 12px;
+}
+
+.checkbox-group label {
+    display: listitem;
+    margin: 0px 0;
+}
