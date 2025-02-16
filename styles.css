@@ -34,7 +34,8 @@ ul, table {
 
 .icon-text {
     display: flex;
-    align-items: center; 
+    align-items: center;
+    white-space: pre-wrap;
 }
 
 li, td {

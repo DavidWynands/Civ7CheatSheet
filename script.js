@@ -29,10 +29,12 @@ document.getElementById('filterInputTable').addEventListener('input', function()
 // Function to add tooltips to specific words
 function addTooltips() {
     const tooltipWords = {
-        "food": "Stuff to eat.",
+        "Item": "a thing",
+        "food": "Stuff to eat",
+        "terrain": "one hexagon tile"
     };
     
-    const tooltipTargets = document.querySelectorAll('.tooltip-target');
+    const tooltipTargets = document.querySelectorAll('.tooltip-target, .icon-text');
 
     tooltipTargets.forEach(target => {
         let html = target.innerHTML;

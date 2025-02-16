@@ -17,10 +17,10 @@
             <li class="list-item">Item 1</li>
             <li class="list-item">Item 2</li>
             <li class="list-item">Item 3</li>
-            <li class="list-item"><span class="tooltip">Item 4<span class="tooltiptext">a special Item with Tooltip</span></span></li>
-            <li class="list-item">Item 5</li>
+            <li class="list-item"><span class="tooltip-target">Item 4 and terrain</span></li>
+            <li class="list-item"><div class="icon-text">Item 5</div></li>
             <li class="list-item">New Edited Item</li>
-            <li class="list-item"><img src="images/science_icon.png" alt="incense Image" width="25">5 new Edited Item</li>
+            <li class="list-item"><img src="images/science.png" alt="incense Image" width="25">5 new Edited Item</li>
             <!-- <td><div class="flex-container"><img src="images/warrior.png" alt="Warrior Image" width="50"> Warrior</div> -->
         </ul>
         
@@ -29,26 +29,24 @@
         <table id="cheatsheetTable">
             <thead>
                 <tr>
-                    <th>Category</th>
-                    <th>Item</th>
-                    <th>Description</th>
+                    <th>Building</th>
+                    <th>Age</th>
+                    <th>Production Cost</th>
+                    <th>Base Yield </th>
+                    <th>Adjacency Bonus</th>
+                    <th>Bonus to Improvements</th>
+
                 </tr>
             </thead>
             <tbody>
                 <tr class="table-row">
-                    <td>Units</td>
-                    <td>Warrior</td>
-                    <td>Basic melee unit.</td>
-                </tr>
-                <tr class="table-row">
-                    <td>Buildings</td>
-                    <td>Granary</td>
-                    <td><p class="tooltip-target">Provides food storage to store a lot of food.</p></td>
-                </tr>
-                <tr class="table-row">
-                    <td> Technologies</td>
-                    <td><div class="icon-text"><img src="images/science_icon.png" alt="science Image" width="25"> x 0.5 </div></td>
-                    <td> Ressource</td>
+                    <td><div class="icon-text"><img src="images/INN.png" alt="INN" width="40"> INN</div></td>
+                    <td>Exploration</td>
+                    <td><div class="icon-text"><img src="images/culture.png" alt="culture" width="25">  200</div></td>
+                    <td><div class="icon-text"><img src="images/culture.png" alt="culture" width="25"> x 3, <img src="images/science.png" alt="science" width="25"> x 2</div></td>
+                    <!-- <td><div class="icon-text">+1 <img src="images/science.png" alt="science" width="25"> for: coastal terrain, navigable river terrain, wonders </div></td> -->
+                    <td><div class="icon-text">+1 <img src="images/science.png" alt="science" width="25"> for: <div>  - coastal terrain<br>  - navigable river terrain<br>  - wonders</div></td>
+                    <td> - none </td>
                 </tr>
             </tbody>
         </table>

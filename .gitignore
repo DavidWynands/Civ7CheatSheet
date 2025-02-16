@@ -5,6 +5,7 @@
 
 # User-specific files
 images_cuts/*
+screenshots/*
 *.rsuser
 *.suo
 *.user
