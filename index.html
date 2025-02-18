@@ -25,14 +25,30 @@
         </ul>
 
         <!-- Checkbox elements -->
-        <div class="checkbox-group">
-            <label><input type="checkbox" name="choices" value="A"> Choice A</label><br>
-            <label><input type="checkbox" name="choices" value="B"> Choice B</label><br>
-            <label><input type="checkbox" name="choices" value="C"> Choice C</label><br>
+        <div class="horizontal-container">
+            <div class="vertical-container">
+                <input type="text" id="filterInputTable" class="filter-input" placeholder="Type to search...">
+                <div class="horizontal-checkbox-group">
+                    <label><input type="checkbox" name="choices" value="A">Ageless</label><br>
+                    <label><input type="checkbox" name="choices" value="A">Antiquity</label><br>
+                    <label><input type="checkbox" name="choices" value="B">Exploration</label><br>
+                    <label><input type="checkbox" name="choices" value="C">Modern</label><br>
+                </div>
+            </div>
+            <div class="horizontal-container">
+                <div class="vertical-checkbox-group">
+                    <label><input type="checkbox" name="choices" value="A"> Food</label>
+                    <label><input type="checkbox" name="choices" value="A"> Science</label>
+                    <label><input type="checkbox" name="choices" value="B"> Culture</label>
+                </div>
+                <div class="vertical-checkbox-group">
+                    <label><input type="checkbox" name="choices" value="C"> Influence</label>
+                    <label><input type="checkbox" name="choices" value="C"> Happiness</label>
+                    <label><input type="checkbox" name="choices" value="C"> Production</label>
+                </div>
+            </div>
         </div>
-        
         <!-- TABLE -->
-        <input type="text" id="filterInputTable" class="filter-input" placeholder="Type to search...">
         <table id="cheatsheetTable">
             <thead>
                 <tr>
