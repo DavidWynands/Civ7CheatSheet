@@ -12,39 +12,34 @@
     </header>
     <main>
         <!-- LIST -->
-        <input type="text" id="filterInput" class="filter-input" placeholder="Type to search...">
         <ul id="list">
-            <li class="list-item">Item 1</li>
-            <li class="list-item">Item 2</li>
-            <li class="list-item">Item 3</li>
-            <li class="list-item"><span class="tooltip-target">Item 4 and terrain</span></li>
-            <li class="list-item"><div class="icon-text">Item 5</div></li>
-            <li class="list-item">New Edited Item</li>
-            <li class="list-item"><img src="images/science.png" alt="incense Image" width="25">5 new Edited Item</li>
-            <!-- <td><div class="flex-container"><img src="images/warrior.png" alt="Warrior Image" width="50"> Warrior</div> -->
+            <li class="list-item">Buildings</li>
+            <li class="list-item">Leaders</li>
+            <li class="list-item"><span class="tooltip-target">Nations</span></li>
         </ul>
-
+        <h1>Buildings</h1>
+        <p>Overview table about all the buildings you can build in your cities.</p>
         <!-- Checkbox elements -->
         <div class="horizontal-container">
             <div class="vertical-container">
                 <input type="text" id="filterInputTable" class="filter-input" placeholder="Type to search...">
                 <div class="horizontal-checkbox-group">
-                    <label><input type="checkbox" name="choices" value="A">Ageless</label><br>
-                    <label><input type="checkbox" name="choices" value="A">Antiquity</label><br>
-                    <label><input type="checkbox" name="choices" value="B">Exploration</label><br>
-                    <label><input type="checkbox" name="choices" value="C">Modern</label><br>
+                    <label><input type="checkbox" name="ages" value="ageless" checked>Ageless</label><br>
+                    <label><input type="checkbox" name="ages" value="antiquity" checked>Antiquity</label><br>
+                    <label><input type="checkbox" name="ages" value="exploration" checked>Exploration</label><br>
+                    <label><input type="checkbox" name="ages" value="modern" checked>Modern</label><br>
                 </div>
             </div>
             <div class="horizontal-container">
                 <div class="vertical-checkbox-group">
-                    <label><input type="checkbox" name="choices" value="A"> Food</label>
-                    <label><input type="checkbox" name="choices" value="A"> Science</label>
-                    <label><input type="checkbox" name="choices" value="B"> Culture</label>
+                    <label><input type="checkbox" name="yields" value="food" checked><img src="images/food.png" alt="food" height="25"><div>Food</div></label>
+                    <label><input type="checkbox" name="yields" value="science" checked><img src="images/science.png" alt="science" height="25">Science</label>
+                    <label><input type="checkbox" name="yields" value="culture" checked><img src="images/culture.png" alt="culture" height="25">Culture</label>
                 </div>
                 <div class="vertical-checkbox-group">
-                    <label><input type="checkbox" name="choices" value="C"> Influence</label>
-                    <label><input type="checkbox" name="choices" value="C"> Happiness</label>
-                    <label><input type="checkbox" name="choices" value="C"> Production</label>
+                    <label><input type="checkbox" name="yields" value="influence" checked><img src="images/influence.png" alt="influence" height="25">Influence</label>
+                    <label><input type="checkbox" name="yields" value="happiness" checked><img src="images/happiness.png" alt="happiness" height="25">Happiness</label>
+                    <label><input type="checkbox" name="yields" value="production" checked><img src="images/production.png" alt="production" height="25">Production</label>
                 </div>
             </div>
         </div>
@@ -56,20 +51,27 @@
                     <th>Age</th>
                     <th>Production Cost</th>
                     <th>Base Yield </th>
-                    <th>Adjacency Bonus</th>
-                    <th>Bonus to Improvements</th>
+                    <th>Gets Adjacency Bonus From</th>
+                    <th>Adds Bonus To</th>
 
                 </tr>
             </thead>
             <tbody>
                 <tr class="table-row">
-                    <td><div class="icon-text"><img src="images/INN.png" alt="INN" width="40"> INN</div></td>
-                    <td>Exploration</td>
-                    <td><div class="icon-text"><img src="images/culture.png" alt="culture" width="25">  200</div></td>
-                    <td><div class="icon-text"><img src="images/culture.png" alt="culture" width="25"> x 3, <img src="images/science.png" alt="science" width="25"> x 2</div></td>
-                    <!-- <td><div class="icon-text">+1 <img src="images/science.png" alt="science" width="25"> for: coastal terrain, navigable river terrain, wonders </div></td> -->
-                    <td><div class="icon-text">+1 <img src="images/science.png" alt="science" width="25"> for: <div>  - coastal terrain<br>  - navigable river terrain<br>  - wonders</div></td>
-                    <td> - none </td>
+                    <!--building-->         <td><div class="icon-text"><img src="images/INN.png" alt="INN" height="30"> INN</div></td>
+                    <!--age-->              <td>Exploration</td>
+                    <!--production cost-->  <td><div class="icon-text"><img src="images/production.png" alt="production" height="30">  200</div></td>
+                    <!--base yield-->       <td><div class="icon-text">+3<img src="images/food.png" alt="food" height="30">+2<img src="images/happiness.png" alt="happiness" height="30"></div></td>
+                    <!--adjecency from-->   <td><div class="icon-text">+1<img src="images/food.png" alt="food" height="30"> for adjacent: <div></div><div>  - coastal terrain<br>  - navigable river terrain<br>  - wonder</div></td>
+                    <!--bonus to-->         <td> - none </td>
+                </tr>
+                <tr class="table-row">
+                    <td><div class="icon-text"><img src="images/UNIVERSITY.png" alt="UNIVERSITY" height="40"> University</div></td>
+                    <td>Ageless</td>
+                    <td><div class="icon-text"><img src="images/production.png" alt="production" height="30">  200</div></td>
+                    <td><div class="icon-text">+5<img src="images/science.png" alt="science" height="30"></div></td>
+                    <td><div class="icon-text">+1<img src="images/science.png" alt="science" height="30"> for adjacent: <div></div><div>  - resource<br>  - wonder</div></td>
+                    <td><div class="icon-text">+1<img src="images/science.png" alt="science" height="30"> to: <div></div><div>  - quarters</div></td>
                 </tr>
             </tbody>
         </table>
