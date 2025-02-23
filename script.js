@@ -75,6 +75,7 @@ function addTooltips() {
             const regex = new RegExp(`\\b(${word})\\b`, 'g');
             html = html.replace(regex, `<span class="tooltip">$1<span class="tooltiptext">${tooltipText}</span></span>`);
         }
+        console.log("html is:", html);
         target.innerHTML = html;
     });
 }
