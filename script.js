@@ -1,17 +1,4 @@
 // Filter for the list
-document.getElementById('filterInput').addEventListener('input', function() {
-    var filterValue = this.value.toLowerCase();
-    var listItems = document.querySelectorAll('.list-item');
-
-    listItems.forEach(function(item) {
-        if (item.textContent.toLowerCase().includes(filterValue)) {
-            item.style.display = '';
-        } else {
-            item.style.display = 'none';
-        }
-    });
-});
-
 document.addEventListener('DOMContentLoaded', () => {
     // Event listener for the text input filter
     document.getElementById('filterInputTable').addEventListener('input', combinedFilter);
@@ -24,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('input[name="yields"]').forEach(checkbox => {
         checkbox.addEventListener('change', combinedFilter);
     });
-
 });
 
 function combinedFilter() {
@@ -89,6 +75,7 @@ function addTooltips() {
             const regex = new RegExp(`\\b(${word})\\b`, 'g');
             html = html.replace(regex, `<span class="tooltip">$1<span class="tooltiptext">${tooltipText}</span></span>`);
         }
+        console.log("html is:", html);
         target.innerHTML = html;
     });
 }
