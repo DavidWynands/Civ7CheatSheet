@@ -166,3 +166,13 @@ a {
     color: rgb(25, 108, 37);
 }
 
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #000000;
+    color: #373d38;
+    text-align: center;
+    line-height: 30px;
+}
