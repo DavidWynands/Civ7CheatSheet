@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import pathlib
 
 # base index html file
@@ -8,9 +9,10 @@ with open(original_index_file) as f:
 
 # building table from excel file
 buildings_table_file = pathlib.Path.cwd() / "Civ7Data.xlsx"
-buildings_table = pd.read_excel(buildings_table_file, header=0)
+buildings_table = pd.read_excel(buildings_table_file, header=0, keep_default_na=False)
 buildings_table = buildings_table.sort_values(by=["Age", "ProductionCost"])
 print(buildings_table)
+
 
 # transfer building table to string (bts) for html
 yield_imgs = {"science": '<img src="images/science.png" alt="science" height="30">',
@@ -49,6 +51,10 @@ for i, row in buildings_table.iterrows():
     for key, img_string in yield_imgs.items():
         bonus_to = bonus_to.replace(key, img_string)
     bts += f'\t\t\t\t\t<td><div class="icon-text">{bonus_to}</div></td>\n'
+    # Notes
+    notes = row.Notes
+    notes = notes.replace('; ', '<br>')
+    bts += f'\t\t\t\t\t<td><div class="icon-text">{notes}</div></td>\n'
     bts += '\t\t\t\t</tr>'
 
 # create actual index html file with buildings table
