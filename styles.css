@@ -70,7 +70,7 @@ main {
     /* border: 2px solid rgb(0, 255, 34); */
 }
 
-ul, table {
+ul {
     margin-top: 10px;
     text-align: center;
     /* border: 2px solid rgb(0, 255, 34); */
@@ -84,9 +84,13 @@ ul, table {
 .icon-text {
     display: flex;
     align-items: center;
-    white-space: no-wrap;
+    white-space: nowrap;
     gap: 5px;
     /* border: 2px solid rgb(0, 255, 34); */
+}
+
+.icon-text span {
+    display: inline-block;
 }
 
 li, td {
@@ -107,7 +111,7 @@ li:hover {
 }
 
 table {
-    width: 100%;
+    table-layout: auto;
     border-collapse: collapse;
 }
 
