@@ -10,7 +10,7 @@ with open(original_index_file) as f:
 # building table from excel file
 buildings_table_file = pathlib.Path.cwd() / "Civ7Data.xlsx"
 buildings_table = pd.read_excel(buildings_table_file, header=0, keep_default_na=False)
-buildings_table = buildings_table.sort_values(by=["Age", "ProductionCost"])
+buildings_table = buildings_table.sort_values(by=["Age", "ProductionCost", "BaseYield"])
 print(buildings_table)
 
 
