@@ -62,9 +62,10 @@ function combinedFilter() {
 // Function to add tooltips to specific words
 function addTooltips() {
     const tooltipWords = {
-        "Item": "a thing",
-        "terrain": "one hexagon tile",
-        "quarters": "a district (urban city tile), with two buildings on it."
+       /* "ageless": "Means that this building can also be build in the susequent ages after it is unlocked. Also means that this building can not be overbuild. So, place carefully, because it is going to stay!",
+        "on a river": "Place on (small) river or navigable river tiles. Can therefore be used to place urban districts on navigable river tiles.",
+        "quarters": "a district (urban city tile), with two buildings on it.",
+        "Age": "The Age in which the building is unlocked and can be build. Only ageless buildings can also be build in the subsequent ages." */
     };
     
     const tooltipTargets = document.querySelectorAll('.tooltip-target, .icon-text');

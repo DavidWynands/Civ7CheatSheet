@@ -10,7 +10,8 @@ with open(original_index_file) as f:
 # building table from excel file
 buildings_table_file = pathlib.Path.cwd() / "Civ7Data.xlsx"
 buildings_table = pd.read_excel(buildings_table_file, header=0, keep_default_na=False)
-buildings_table = buildings_table.sort_values(by=["Age", "ProductionCost", "BaseYield"])
+#buildings_table = buildings_table.sort_values(by=["Age", "ProductionCost", "BaseYield"], key=lambda x: "AA" if "ageless" in x else x)
+buildings_table = buildings_table.sort_values(by=["Age", "ProductionCost", "BaseYield"], key=lambda x: [txt.replace(" - ageless", "") if "ageless" in str(txt) else txt for txt in x])
 print(buildings_table)
 
 
@@ -28,7 +29,7 @@ for i, row in buildings_table.iterrows():
     # building name
     bts += f'\t\t\t\t\t<td><div class="icon-text"><img src="images/{row.Building}.png" alt="{row.Building}" height="40"> {row.Building}</div></td>\n'
     # building age
-    bts += f'\t\t\t\t\t<td>{row.Age}</td>\n'
+    bts += f'\t\t\t\t\t<td><div class="icon-text">{row.Age}</div></td>\n'
     # production cost
     bts += f'\t\t\t\t\t<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  {row.ProductionCost}</div></td>\n'
     # Base yields
