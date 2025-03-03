@@ -45,12 +45,7 @@ for i, row in buildings_table.iterrows():
         # list of adjacencies is a vertical-spans class
         adj_boni = adj_boni.replace('for adjacent: ', 'for adjacent: <div class="vertical-spans"><span>- ')
         adj_boni = adj_boni.replace(", ", "</span><span>- ")
-        adj_boni += "</span></div>"        
-
-        # list of adjacencies is one span of text but with <br> for each element
-        # adj_boni = adj_boni.replace('for adjacent: ', 'for adjacent: <div></div><span>- ')
-        # adj_boni += '</span>'
-        # adj_boni = adj_boni.replace(', ', '<br>- ')
+        adj_boni += "</span>"        
     bts += f'\t\t\t\t\t<td><div class="icon-text">{adj_boni}</div></td>\n'
     # Bonus to 
     bonus_to = row.BonusTo
