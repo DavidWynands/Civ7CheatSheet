@@ -39,6 +39,13 @@ main {
     /* border: 2px solid rgb(0, 255, 34); */
 }
 
+.vertical-spans {
+    display: flex;
+    flex-direction: column; 
+    align-items: left;
+    /* border: 2px solid rgb(0, 187, 255); */
+}
+
 .vertical-checkbox-group {
     display: flex;
     flex-direction: column; 
@@ -133,26 +140,29 @@ tr:hover {
 
 .tooltip {
     position: relative;
-    display: inline-block;
+    /* display: block; */
     cursor: pointer;
     border-bottom: 1px dotted black;
 }
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
+    width: 300px;
+    background-color: #654e4e;
+    color: #ffffff; /* text color */
+    text-align: justify;
     border-radius: 5px;
-    padding: 5px 0;
+    padding: 12px;
     position: absolute;
     z-index: 1;
-    bottom: 125%;
+    bottom: 170%;
     left: 50%;
     margin-left: -60px;
     opacity: 0;
     transition: opacity 0.3s;
+    white-space: normal;
+   /*  display: block; */
+    border: 2px solid #ffffff;
 }
 
 .tooltip:hover .tooltiptext {

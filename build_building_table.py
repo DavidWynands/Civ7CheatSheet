@@ -42,10 +42,15 @@ for i, row in buildings_table.iterrows():
     for key, img_string in yield_imgs.items():
         adj_boni = adj_boni.replace(key, img_string)
     if 'for adjacent: ' in adj_boni:
+        # list of adjacencies is a vertical-spans class
+        adj_boni = adj_boni.replace('for adjacent: ', 'for adjacent: <div class="vertical-spans"><span>- ')
+        adj_boni = adj_boni.replace(", ", "</span><span>- ")
+        adj_boni += "</span></div>"        
+
         # list of adjacencies is one span of text but with <br> for each element
-        adj_boni = adj_boni.replace('for adjacent: ', 'for adjacent: <div></div><span>- ')
-        adj_boni += '</span>'
-        adj_boni = adj_boni.replace(', ', '<br>- ')
+        # adj_boni = adj_boni.replace('for adjacent: ', 'for adjacent: <div></div><span>- ')
+        # adj_boni += '</span>'
+        # adj_boni = adj_boni.replace(', ', '<br>- ')
     bts += f'\t\t\t\t\t<td><div class="icon-text">{adj_boni}</div></td>\n'
     # Bonus to 
     bonus_to = row.BonusTo
@@ -54,7 +59,9 @@ for i, row in buildings_table.iterrows():
     bts += f'\t\t\t\t\t<td><div class="icon-text">{bonus_to}</div></td>\n'
     # Notes
     notes = row.Notes
-    notes = notes.replace('; ', '<br>')
+    note_parts = notes.split(";")
+    if len(note_parts) > 1:
+        notes = '<div class="vertical-spans"><span>' + '</span><span>'.join(note_parts) + '</span></div>'
     bts += f'\t\t\t\t\t<td><div class="icon-text">{notes}</div></td>\n'
     bts += '\t\t\t\t</tr>'
 

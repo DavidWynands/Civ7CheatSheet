@@ -62,10 +62,11 @@ function combinedFilter() {
 // Function to add tooltips to specific words
 function addTooltips() {
     const tooltipWords = {
-       /* "ageless": "Means that this building can also be build in the susequent ages after it is unlocked. Also means that this building can not be overbuild. So, place carefully, because it is going to stay!",
-        "on a river": "Place on (small) river or navigable river tiles. Can therefore be used to place urban districts on navigable river tiles.",
-        "quarters": "a district (urban city tile), with two buildings on it.",
-        "Age": "The Age in which the building is unlocked and can be build. Only ageless buildings can also be build in the subsequent ages." */
+       "ageless": "'Ageless' means that this building can also be built in subsequent ages after it is unlocked. Also means that this building can not be overbuilt. So, place carefully, because it is going to stay!",
+       "on a river": "Place on (small) river or navigable river tiles. Can therefore be used to place urban districts on navigable river tiles.",
+       "quarters": "A district (urban city tile), with two (finished) buildings on it.",
+       "Age": "The Age in which the building is unlocked and can be built. Only ageless buildings can also be built in subsequent ages.",
+       "ressource slots": "Ingame testing showed that these ressource slots are only available during the age this building is unlocked, but not in subsequent ages.",
     };
     
     const tooltipTargets = document.querySelectorAll('.tooltip-target, .icon-text');
@@ -76,7 +77,6 @@ function addTooltips() {
             const regex = new RegExp(`\\b(${word})\\b`, 'g');
             html = html.replace(regex, `<span class="tooltip">$1<span class="tooltiptext">${tooltipText}</span></span>`);
         }
-        console.log("html is:", html);
         target.innerHTML = html;
     });
 }
