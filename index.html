@@ -18,7 +18,7 @@
             <li class="list-item"><span class="tooltip-target">Nations</span></li>
         </ul>
         <h1>Buildings</h1>
-        <p>Overview table about all the buildings you can build in your cities. (Work in progress)</p>
+        <p>Overview table about all the buildings you can build in your cities. -  (Work in progress) - <b>Currently only Antiquity buildings are complete.</b> I will try to add Exploration and Modern Age buildings asap.</p>
         <!-- Checkbox elements -->
         <div class="horizontal-container">
             <div class="vertical-container">
@@ -55,7 +55,7 @@
             <thead>
                 <tr>
                     <th>Building</th>
-                    <th>Age</th>
+                    <th><div class = "tooltip-target">Age</div></th>
                     <th>Production Cost</th>
                     <th>Base Yield </th>
                     <th>Gets Yield From Adjacency</th>
@@ -108,14 +108,14 @@
 					<td><div class="icon-text">+4 <img src="images/gold.png" alt="gold" height="30"></div></td>
 					<td><div class="icon-text">none</div></td>
 					<td><div class="icon-text">none</div></td>
-					<td><div class="icon-text">must be placed on navigable river<br>land units can move across without needing to embark</div></td>
+					<td><div class="icon-text"><div class="vertical-spans"><span>must be placed on navigable river</span><span> land units can move across without needing to embark</span></div></div></td>
 				</tr>
 				<tr class="table-row">
 					<td><div class="icon-text"><img src="images/MONUMENT.png" alt="MONUMENT" height="40"> MONUMENT</div></td>
 					<td><div class="icon-text">Antiquity</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  90</div></td>
 					<td><div class="icon-text">+2 <img src="images/culture.png" alt="culture" height="30"> +1 <img src="images/influence.png" alt="influence" height="30"></div></td>
-					<td><div class="icon-text">+1 <img src="images/culture.png" alt="culture" height="30"> for adjacent: <div></div><span>- mountain<br>- natural wonder<br>- wonder</span></div></td>
+					<td><div class="icon-text">+1 <img src="images/culture.png" alt="culture" height="30"> for adjacent: <div class="vertical-spans"><span>- mountain</span><span>- natural wonder</span><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">none</div></td>
 					<td><div class="icon-text"></div></td>
 				</tr>
@@ -124,7 +124,7 @@
 					<td><div class="icon-text">Antiquity</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  90</div></td>
 					<td><div class="icon-text">+2 <img src="images/gold.png" alt="gold" height="30"></div></td>
-					<td><div class="icon-text">+1 <img src="images/gold.png" alt="gold" height="30"> for adjacent: <div></div><span>- coastal terrain<br>- navigable river terrain<br>- wonder</span></div></td>
+					<td><div class="icon-text">+1 <img src="images/gold.png" alt="gold" height="30"> for adjacent: <div class="vertical-spans"><span>- coastal terrain</span><span>- navigable river terrain</span><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">none</div></td>
 					<td><div class="icon-text">must be placed on a river</div></td>
 				</tr>
@@ -133,7 +133,7 @@
 					<td><div class="icon-text">Antiquity</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  90</div></td>
 					<td><div class="icon-text">+2 <img src="images/happiness.png" alt="happiness" height="30"></div></td>
-					<td><div class="icon-text">+1 <img src="images/happiness.png" alt="happiness" height="30"> for adjacent: <div></div><span>- wonder</span></div></td>
+					<td><div class="icon-text">+1 <img src="images/happiness.png" alt="happiness" height="30"> for adjacent: <div class="vertical-spans"><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">none</div></td>
 					<td><div class="icon-text">gets additional bonuses from Pantheon</div></td>
 				</tr>
@@ -142,7 +142,7 @@
 					<td><div class="icon-text">Antiquity</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  90</div></td>
 					<td><div class="icon-text">+2 <img src="images/production.png" alt="production" height="30"></div></td>
-					<td><div class="icon-text">+1 <img src="images/production.png" alt="production" height="30"> for adjacent: <div></div><span>- ressource<br>- wonder</span></div></td>
+					<td><div class="icon-text">+1 <img src="images/production.png" alt="production" height="30"> for adjacent: <div class="vertical-spans"><span>- ressource</span><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">+10% <img src="images/production.png" alt="production" height="30"> towards land units</div></td>
 					<td><div class="icon-text"></div></td>
 				</tr>
@@ -151,7 +151,7 @@
 					<td><div class="icon-text">Antiquity</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  90</div></td>
 					<td><div class="icon-text">+2 <img src="images/science.png" alt="science" height="30"></div></td>
-					<td><div class="icon-text">+1 <img src="images/science.png" alt="science" height="30"> for adjacent: <div></div><span>- ressource<br>- wonder</span></div></td>
+					<td><div class="icon-text">+1 <img src="images/science.png" alt="science" height="30"> for adjacent: <div class="vertical-spans"><span>- ressource</span><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">none</div></td>
 					<td><div class="icon-text">2 relic slots</div></td>
 				</tr>
@@ -160,7 +160,7 @@
 					<td><div class="icon-text">Antiquity</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  90</div></td>
 					<td><div class="icon-text">+3 <img src="images/food.png" alt="food" height="30"></div></td>
-					<td><div class="icon-text">1+ <img src="images/food.png" alt="food" height="30"> for adjacent: <div></div><span>- coastal terrain<br>- navigable river terrain<br>- wonder</span></div></td>
+					<td><div class="icon-text">1+ <img src="images/food.png" alt="food" height="30"> for adjacent: <div class="vertical-spans"><span>- coastal terrain</span><span>- navigable river terrain</span><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">none</div></td>
 					<td><div class="icon-text"></div></td>
 				</tr>
@@ -169,16 +169,16 @@
 					<td><div class="icon-text">Antiquity</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  130</div></td>
 					<td><div class="icon-text">+3 <img src="images/gold.png" alt="gold" height="30"></div></td>
-					<td><div class="icon-text">+1 <img src="images/gold.png" alt="gold" height="30"> for adjacent: <div></div><span>- coastal terrain<br>- navigable river terrain<br>- wonder</span></div></td>
+					<td><div class="icon-text">+1 <img src="images/gold.png" alt="gold" height="30"> for adjacent: <div class="vertical-spans"><span>- coastal terrain</span><span>- navigable river terrain</span><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">none</div></td>
-					<td><div class="icon-text">+ 2 ressource slots<br>must be placed on coast</div></td>
+					<td><div class="icon-text"><div class="vertical-spans"><span>+ 2 ressource slots</span><span> must be placed on coast</span></div></div></td>
 				</tr>
 				<tr class="table-row">
 					<td><div class="icon-text"><img src="images/VILLA.png" alt="VILLA" height="40"> VILLA</div></td>
 					<td><div class="icon-text">Antiquity</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  130</div></td>
 					<td><div class="icon-text">+3 <img src="images/happiness.png" alt="happiness" height="30"> +2 <img src="images/influence.png" alt="influence" height="30"></div></td>
-					<td><div class="icon-text">+1 <img src="images/happiness.png" alt="happiness" height="30"> for adjacent: <div></div><span>- mountain<br>- natural wonder<br>- wonder</span></div></td>
+					<td><div class="icon-text">+1 <img src="images/happiness.png" alt="happiness" height="30"> for adjacent: <div class="vertical-spans"><span>- mountain</span><span>- natural wonder</span><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">none</div></td>
 					<td><div class="icon-text"></div></td>
 				</tr>
@@ -187,7 +187,7 @@
 					<td><div class="icon-text">Antiquity</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  130</div></td>
 					<td><div class="icon-text">+3 <img src="images/production.png" alt="production" height="30"></div></td>
-					<td><div class="icon-text">+1 <img src="images/production.png" alt="production" height="30"> for adjacent: <div></div><span>- ressource<br>- wonder</span></div></td>
+					<td><div class="icon-text">+1 <img src="images/production.png" alt="production" height="30"> for adjacent: <div class="vertical-spans"><span>- ressource</span><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">+1 <img src="images/production.png" alt="production" height="30"> to quarters</div></td>
 					<td><div class="icon-text"></div></td>
 				</tr>
@@ -196,7 +196,7 @@
 					<td><div class="icon-text">Antiquity</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  130</div></td>
 					<td><div class="icon-text">+4 <img src="images/food.png" alt="food" height="30"></div></td>
-					<td><div class="icon-text">+1 <img src="images/food.png" alt="food" height="30"> for adjacent: <div></div><span>- coastal terrain<br>- navigable river terrain<br>- wonder</span></div></td>
+					<td><div class="icon-text">+1 <img src="images/food.png" alt="food" height="30"> for adjacent: <div class="vertical-spans"><span>- coastal terrain</span><span>- navigable river terrain</span><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">+10% growth rate</div></td>
 					<td><div class="icon-text">must be placed on a river</div></td>
 				</tr>
@@ -205,7 +205,7 @@
 					<td><div class="icon-text">Antiquity</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  195</div></td>
 					<td><div class="icon-text">+4 <img src="images/culture.png" alt="culture" height="30"></div></td>
-					<td><div class="icon-text">+1 <img src="images/culture.png" alt="culture" height="30"> for adjacent: <div></div><span>- mountain<br>- natural wonder<br>- wonder</span></div></td>
+					<td><div class="icon-text">+1 <img src="images/culture.png" alt="culture" height="30"> for adjacent: <div class="vertical-spans"><span>- mountain</span><span>- natural wonder</span><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">+10% <img src="images/production.png" alt="production" height="30"> towards wonders</div></td>
 					<td><div class="icon-text"></div></td>
 				</tr>
@@ -214,7 +214,7 @@
 					<td><div class="icon-text">Antiquity</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  195</div></td>
 					<td><div class="icon-text">+4 <img src="images/happiness.png" alt="happiness" height="30"></div></td>
-					<td><div class="icon-text">+1 <img src="images/happiness.png" alt="happiness" height="30"> for adjacent: <div></div><span>- mountain<br>- natural wonder<br>- wonder</span></div></td>
+					<td><div class="icon-text">+1 <img src="images/happiness.png" alt="happiness" height="30"> for adjacent: <div class="vertical-spans"><span>- mountain</span><span>- natural wonder</span><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">+1 <img src="images/happiness.png" alt="happiness" height="30"> on quarters</div></td>
 					<td><div class="icon-text"></div></td>
 				</tr>
@@ -223,7 +223,7 @@
 					<td><div class="icon-text">Antiquity</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  195</div></td>
 					<td><div class="icon-text">+4 <img src="images/science.png" alt="science" height="30"></div></td>
-					<td><div class="icon-text">+1 <img src="images/science.png" alt="science" height="30"> for adjacent: <div></div><span>- ressource<br>- wonder</span></div></td>
+					<td><div class="icon-text">+1 <img src="images/science.png" alt="science" height="30"> for adjacent: <div class="vertical-spans"><span>- ressource</span><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">none</div></td>
 					<td><div class="icon-text">3 codex slots</div></td>
 				</tr>
@@ -259,16 +259,16 @@
 					<td><div class="icon-text">Exploration</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  175</div></td>
 					<td><div class="icon-text">+4 <img src="images/food.png" alt="food" height="30"></div></td>
-					<td><div class="icon-text">+1 <img src="images/food.png" alt="food" height="30"> for adjacent: <div></div><span>- coastal terrain<br>- navigable river terrain<br>- wonder</span></div></td>
+					<td><div class="icon-text">+1 <img src="images/food.png" alt="food" height="30"> for adjacent: <div class="vertical-spans"><span>- coastal terrain</span><span>- navigable river terrain</span><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">none</div></td>
-					<td><div class="icon-text">+ 2 ressource slots<br>must be placed on coast or navigable river</div></td>
+					<td><div class="icon-text"><div class="vertical-spans"><span>+ 2 ressource slots</span><span> must be placed on coast or navigable river</span></div></div></td>
 				</tr>
 				<tr class="table-row">
 					<td><div class="icon-text"><img src="images/INN.png" alt="INN" height="40"> INN</div></td>
 					<td><div class="icon-text">Exploration</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  200</div></td>
 					<td><div class="icon-text">+3 <img src="images/food.png" alt="food" height="30"> +2 <img src="images/happiness.png" alt="happiness" height="30"></div></td>
-					<td><div class="icon-text">+1 <img src="images/food.png" alt="food" height="30"> for adjacent: <div></div><span>- coastal terrain<br>- navigable river terrain<br>- wonder</span></div></td>
+					<td><div class="icon-text">+1 <img src="images/food.png" alt="food" height="30"> for adjacent: <div class="vertical-spans"><span>- coastal terrain</span><span>- navigable river terrain</span><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">none</div></td>
 					<td><div class="icon-text"></div></td>
 				</tr>
@@ -277,7 +277,7 @@
 					<td><div class="icon-text">Exploration</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  200</div></td>
 					<td><div class="icon-text">+4 <img src="images/culture.png" alt="culture" height="30"></div></td>
-					<td><div class="icon-text">+1 <img src="images/culture.png" alt="culture" height="30"> for adjacent: <div></div><span>- mountain<br>- natural wonder<br>- wonder</span></div></td>
+					<td><div class="icon-text">+1 <img src="images/culture.png" alt="culture" height="30"> for adjacent: <div class="vertical-spans"><span>- mountain</span><span>- natural wonder</span><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">+10% <img src="images/production.png" alt="production" height="30"> towards wonders</div></td>
 					<td><div class="icon-text"></div></td>
 				</tr>
@@ -286,7 +286,7 @@
 					<td><div class="icon-text">Exploration</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  200</div></td>
 					<td><div class="icon-text">+4 <img src="images/gold.png" alt="gold" height="30"> +2 <img src="images/influence.png" alt="influence" height="30"></div></td>
-					<td><div class="icon-text">+1 <img src="images/gold.png" alt="gold" height="30"> for adjacent: <div></div><span>- coastal terrain<br>- navigable river terrain<br>- wonder</span></div></td>
+					<td><div class="icon-text">+1 <img src="images/gold.png" alt="gold" height="30"> for adjacent: <div class="vertical-spans"><span>- coastal terrain</span><span>- navigable river terrain</span><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">none</div></td>
 					<td><div class="icon-text"></div></td>
 				</tr>
@@ -295,16 +295,16 @@
 					<td><div class="icon-text">Exploration</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  200</div></td>
 					<td><div class="icon-text">+4 <img src="images/happiness.png" alt="happiness" height="30"></div></td>
-					<td><div class="icon-text">+1 <img src="images/happiness.png" alt="happiness" height="30"> for adjacent: <div></div><span>- mountain<br>- natural wonder<br>- wonder</span></div></td>
+					<td><div class="icon-text">+1 <img src="images/happiness.png" alt="happiness" height="30"> for adjacent: <div class="vertical-spans"><span>- mountain</span><span>- natural wonder</span><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">none</div></td>
-					<td><div class="icon-text">1 relic slot<br>unlocks missionaries in this settlement</div></td>
+					<td><div class="icon-text"><div class="vertical-spans"><span>1 relic slot</span><span> unlocks missionaries in this settlement</span></div></div></td>
 				</tr>
 				<tr class="table-row">
 					<td><div class="icon-text"><img src="images/OBSERVATORY.png" alt="OBSERVATORY" height="40"> OBSERVATORY</div></td>
 					<td><div class="icon-text">Exploration</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  200</div></td>
 					<td><div class="icon-text">+4 <img src="images/science.png" alt="science" height="30"></div></td>
-					<td><div class="icon-text">+1 <img src="images/science.png" alt="science" height="30"> for adjacent: <div></div><span>- ressource<br>- wonder</span></div></td>
+					<td><div class="icon-text">+1 <img src="images/science.png" alt="science" height="30"> for adjacent: <div class="vertical-spans"><span>- ressource</span><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">none</div></td>
 					<td><div class="icon-text"></div></td>
 				</tr>
@@ -313,7 +313,7 @@
 					<td><div class="icon-text">Exploration</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  200</div></td>
 					<td><div class="icon-text">+5 <img src="images/production.png" alt="production" height="30"></div></td>
-					<td><div class="icon-text">+1 <img src="images/production.png" alt="production" height="30"> for adjacent: <div></div><span>- ressource<br>- wonder</span></div></td>
+					<td><div class="icon-text">+1 <img src="images/production.png" alt="production" height="30"> for adjacent: <div class="vertical-spans"><span>- ressource</span><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">+10% <img src="images/production.png" alt="production" height="30"> towards naval units</div></td>
 					<td><div class="icon-text">must be placed on coast adjacent to land</div></td>
 				</tr>
@@ -322,7 +322,7 @@
 					<td><div class="icon-text">Exploration</div></td>
 					<td><div class="icon-text"><img src="images/production.png" alt="prodcost" height="30">  200</div></td>
 					<td><div class="icon-text">+5 <img src="images/science.png" alt="science" height="30"></div></td>
-					<td><div class="icon-text">+1 <img src="images/science.png" alt="science" height="30"> for adjacent: <div></div><span>- ressource<br>- wonder</span></div></td>
+					<td><div class="icon-text">+1 <img src="images/science.png" alt="science" height="30"> for adjacent: <div class="vertical-spans"><span>- ressource</span><span>- wonder</span></div></div></td>
 					<td><div class="icon-text">+1 <img src="images/science.png" alt="science" height="30"> to quarters</div></td>
 					<td><div class="icon-text"></div></td>
 				</tr>
