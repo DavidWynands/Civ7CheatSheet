@@ -51,6 +51,10 @@ for i, row in buildings_table.iterrows():
     bonus_to = row.BonusTo
     for key, img_string in yield_imgs.items():
         bonus_to = bonus_to.replace(key, img_string)
+    if " to: " in bonus_to:
+        bonus_to = bonus_to.replace(' to: ', ' to: <div class="vertical-spans"><span> ')
+        bonus_to = bonus_to.replace("; ", "</span><span> ")
+        bonus_to += "</span>" 
     bts += f'\t\t\t\t\t<td><div class="icon-text">{bonus_to}</div></td>\n'
     # Notes
     notes = row.Notes
